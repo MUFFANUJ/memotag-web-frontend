@@ -19,7 +19,7 @@ const ContactSection = () => {
     const message = formData.get('message');
   
     try {
-      const res = await fetch('http://localhost:3000/send-note', {
+      const res = await fetch('http://memotag-web-backend-eelv8ff1d-anuj-singhs-projects-9cafdcc7.vercel.app/send-note', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
