@@ -52,7 +52,7 @@ const CTASection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const res = await fetch('http://memotag-web-backend-eelv8ff1d-anuj-singhs-projects-9cafdcc7.vercel.app/send-note', {
+      const res = await fetch('https://memotag-web-backend-eelv8ff1d-anuj-singhs-projects-9cafdcc7.vercel.app/send-note', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
