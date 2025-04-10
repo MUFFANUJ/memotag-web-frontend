@@ -52,7 +52,7 @@ const CTASection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const res = await fetch('https://memotag-web-backend.vercel.app/send-note', {
+      const res = await fetch('http://localhost:3000/send-note', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -61,11 +61,15 @@ const CTASection = () => {
           to: 'anujsinghhero292@gmail.com',   
           subject: `Contact Form from ${formData.name} - ${formData.interest}`,
           content: `
-  Name: ${formData.name}
-  Email: ${formData.email}
-  Interested As: ${formData.interest}
-  Message: ${formData.message || 'No Message Provided'}
+          Name: ${formData.name}
+          Email: ${formData.email}
+          Interested As: ${formData.interest}
+          Message: ${formData.message || 'No Message Provided'}
           `,
+          name:formData.name,
+          email:formData.email,
+          interest:formData.interest,
+          message:formData.message
         }),
       });
       setIsSubmitting(false);
