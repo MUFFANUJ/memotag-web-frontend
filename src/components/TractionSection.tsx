@@ -248,8 +248,8 @@ const TractionSection = () => {
                 ))}
               </CarouselContent>
               <div className="flex justify-center mt-8 gap-2">
-                <CarouselPrevious className="static translate-y-0 left-auto" />
-                <CarouselNext className="static translate-y-0 right-auto" />
+                <CarouselPrevious className="static translate-y-0 left-auto hover:text-white" />
+                <CarouselNext className="static translate-y-0 right-auto hover:text-white" />
               </div>
             </Carousel>
           </div>
