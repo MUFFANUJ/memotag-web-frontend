@@ -212,7 +212,7 @@ const ContactSection = () => {
                       <Button 
                         onClick={() => setSubmitted(false)}
                         variant="outline" 
-                        className="mt-4"
+                        className="mt-4 hover:text-white"
                       >
                         Send Another Message
                       </Button>
